@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ipros</title>
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<!-- <div class="test bg-primary">test</div> -->
+	<header>
+		<div class="container-fluid header_menu">
+			<!-- <div class="row">
+				<div class="col-2 bg-primary">aa</div>
+				<div class="col-5 bg-warning">bb</div>
+				<div class="col-5 bg-primary">cc</div>
+			</div> -->
+			<div class=" row  header_menu1st">
+				<!-- d-flex align-items-center -->
+				<div class="header_menu_logo col-2 ps-5">
+					<a href="https://www.ipros.jp/"><img src="./img/page-header-logo.png" alt="GoHome"></a>
+				</div><!-- <div class="search"> -->
+				<div class="col-5">
+					<fieldset class="header_menu_search border border-dark ms-5 ">
+						<!-- <div class="header_menu_search"> -->
+						<input type="text" autocomplete="off" aria-autocomplete="list" aria-controls="react-autowhatever-1"
+							id="txtInput" name="kw" class="input-default" placeholder="キーワードで探す" value="">
+						<!-- ブラウザが記憶する 地亜紀選択しただけで前回入力の候補として出てくる
+		 autocomplete="off" 
+		ちょっと入力したら候補として補完された物が出てくる
+		aria-autocomplete="list" 		-->
+						<!-- <div class="search_btn"> -->
+						<button class="search_btn" type="submit" class="fa" value="">
+							<i class="fas fa-search"></i>
+						</button>
+					</fieldset>
+				</div>
+				<!-- </div> -->
+				<!-- </div> -->
+				<div class="header_menu2nd  col-5 ">
+					<ul class="d-flex align-items-center flex-row-reverse">
+						<li class="bg-warning "><a href=""><i class="fas fa-id-card fa-2x header_menu2ndIcon"></i><br>会員登録</a>
+						</li>
+						<li class=""><a href=""><i class="fas fa-lock fa-2x header_menu2ndIcon"></i><br>ログイン</a></li>
+						<li><a href=""><i class="fas fa-history fa-2x header_menu2ndIcon"></i><br>履歴</a></li>
+						<li><a href=""><i class="fas fa-paperclip fa-2x header_menu2ndIcon"></i><br>クリップ</a></li>
+						<li><a href=""><i class="fas fa-comment fa-2x header_menu2ndIcon"></i><br>メッセージ</a></li>
+						<li><a href=""><i class="fas fa-question-circle fa-2x header_menu2ndIcon"></i><br>ヘルプ</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="header_nav col-md-none">
+				<ul>
+					<li><a href="">製品</a></li>
+					<li><a href="">企業</a></li>
+					<li><a href="">特集</a></li>
+					<li><a href="">ランキング</a></li>
+					<li><a href="">注目製品</a></li>
+					<li><a href="">ニュース</a></li>
+					<li><a href="">セミナー・イベント</a></li>
+					<li><a href="">イプロス掲載</a></li>
+					<li><a href="">イプロスとは？</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="hero">
+			<div class=" hero_visual">
+				<img src="./img/img-manufacture-hero--1.png" alt="">
+				<img src="./img/img-manufacture-hero--2.png" alt="">
+				<img src="./img/img-manufacture-hero--3.png" alt="">
+				<img src="./img/img-manufacture-hero--5.png" alt="">
+				<img src="./img/img-manufacture-hero--6.png" alt="">
+			</div>
+			<div class="hero_copy">
+				電子部品オートメーション半導体ウエハー三次元測定画像処理電気自動車電子部品
+				<em>ものづくり</em>の未来を、つくる、<br>
+				支える<em>あらゆる企業</em>が集う
+			</div>
+		</div>
+		<div class="sidebarAdd">
+			<aside>
+				<div class="sidebar">
+
+					<!-- sidebar -->
+					<div class="d-flex flex-column align-items-stretch">
+						<a href="/"
+							class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
+							<svg class="bi me-2" width="30" height="24">
+								<use xlink:href="#bootstrap"></use>
+							</svg>
+							<span class="fs-5 fw-semibold">List groupDayo</span>
+						</a>
+						<div class="list-group list-group-flush border-bottom scrollarea">
+							<a href="#" class="list-group-item list-group-item-action active py-3 lh-tight" aria-current="true">
+								<div class="d-flex w-100 align-items-center justify-content-between">
+									<strong class="mb-1">List group item heading</strong>
+									<small>Wed</small>
+								</div>
+								<div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+							</a>
+							<a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+								<div class="d-flex w-100 align-items-center justify-content-between">
+									<strong class="mb-1">List group item heading</strong>
+									<small class="text-muted">Tues</small>
+								</div>
+								<div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+							</a>
+							<a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+								<div class="d-flex w-100 align-items-center justify-content-between">
+									<strong class="mb-1">List group item heading</strong>
+									<small class="text-muted">Mon</small>
+								</div>
+								<div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+							</a>
+
+							<a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
+								<div class="d-flex w-100 align-items-center justify-content-between">
+									<strong class="mb-1">List group item heading</strong>
+									<small class="text-muted">Wed</small>
+								</div>
+								<div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+							</a>
+							<a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+								<div class="d-flex w-100 align-items-center justify-content-between">
+									<strong class="mb-1">List group item heading</strong>
+									<small class="text-muted">Tues</small>
+								</div>
+								<div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+							</a>
+							<a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+								<div class="d-flex w-100 align-items-center justify-content-between">
+									<strong class="mb-1">List group item heading</strong>
+									<small class="text-muted">Mon</small>
+								</div>
+								<div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+							</a>
+							<a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
+								<div class="d-flex w-100 align-items-center justify-content-between">
+									<strong class="mb-1">List group item heading</strong>
+									<small class="text-muted">Wed</small>
+								</div>
+								<div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+							</a>
+							<a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+								<div class="d-flex w-100 align-items-center justify-content-between">
+									<strong class="mb-1">List group item heading</strong>
+									<small class="text-muted">Tues</small>
+								</div>
+								<div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+							</a>
+							<a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+								<div class="d-flex w-100 align-items-center justify-content-between">
+									<strong class="mb-1">List group item heading</strong>
+									<small class="text-muted">Mon</small>
+								</div>
+								<div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+							</a>
+							<a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
+								<div class="d-flex w-100 align-items-center justify-content-between">
+									<strong class="mb-1">List group item heading</strong>
+									<small class="text-muted">Wed</small>
+								</div>
+								<div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+							</a>
+							<a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+								<div class="d-flex w-100 align-items-center justify-content-between">
+									<strong class="mb-1">List group item heading</strong>
+									<small class="text-muted">Tues</small>
+								</div>
+								<div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+							</a>
+							<a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+								<div class="d-flex w-100 align-items-center justify-content-between">
+									<strong class="mb-1">List group item heading</strong>
+									<small class="text-muted">Mon</small>
+								</div>
+								<div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</aside>>
+			<hr>
+			<section>
+				<div class="main">
+					<img src="./img/IPROS89760976587347212508.jpeg" alt="">
+					<img src="./img/IPROS97574305174288202586.jpeg" alt="">
+
+
+					PR企画一覧
+
+					<hr>
+					製品を探す 一覧
+					電子部品・モジュール
+					48508件
+					機械部品
+					66570件
+					製造・加工機械
+					83327件
+					科学・理化学機器
+					27724件
+					素材・材料
+					26926件
+					測定・分析
+					47760件
+					画像処理
+					12533件
+					制御・電機機器
+					47459件
+					工具・消耗品・備品
+					53279件
+					設計・生産支援
+					9500件
+					IT・ネットワーク
+					30876件
+					オフィス
+					10673件
+					業務支援サービス
+					22263件
+					セミナー・スキルアップ
+					3405件
+					その他
+					48009件
+					あなたにおすすめ
+					注目製品 一覧
+					変成器やスイッチング電源の製造で実績豊富。設計、部品調達、検査、出荷まで対応
+					「使っていた製品が廃番になった」「取引先が廃業してしまった」など、変成器（トランス）やスイッチング電源が入手しづらくなるケースはよくあります。また、希望の仕様やサイズに合うよう、カスタムして欲しい場合も。
+
+					大同電氣工業は、変成器やスイッチング電源の製造を手掛けているメーカーです。船舶無線、計測器、公衆電話向けの製品を幅広く製造し、高い信頼性・耐久性が求められる鉄道信号保安装置向けの製品は昭和３０年代から採用実績があります。同社は、設計から部品調達、製造、検査、出荷まで一貫対応が可能で、変成器の試作も１個から短納期で対応。スイッチング電源は、ニーズに合わせてすべて特注で製作しています。
+					すべて読む
+					サムネイル画像_220x220.png
+					工場内の設置に対応した防塵型サーバーラック。クーラー搭載仕様もラインアップ
+					目が届かない場所や高温環境の安全確保に。腕時計型端末を使った見守りシステム
+					国際規格適合の燃焼試験機をラインアップ。引火性・発火性などが自社で評価可能に
+					製造・物流現場の省力化に。表示付きＲＦＩＤタグや電子棚札をニーズに応じて提供
+					製品ランキング一覧
+					第1位
+					給水管等の配管延命なら「NMRパイプテクター」- NMRPT -
+					給水管等の配管延命なら「NMRパイプテクター」- NMRPT -
+					第2位
+					糊無し吸着シート・フィルム『ゼオンALシート』
+					糊無し吸着シート・フィルム『ゼオンALシート』
+					第3位
+					動画活用で教育の負担削減【OJTの7割を動画化した実名事例付き】
+					動画活用で教育の負担削減【OJTの7割を動画化した実名事例付き】
+					カタログランキング一覧
+					第1位
+					マンガでわかる！ポンプの選び方〈定量移送・供給編〉 ※無料進呈
+					マンガでわかる！ポンプの選び方〈定量移送・供給編〉 ※無料進呈
+					第2位
+					クラウド型動画教育プラットフォーム『tebiki』
+					クラウド型動画教育プラットフォーム『tebiki』
+					第3位
+					資料『積層造形をターゲットとした設計～3Dプリントの未来～』
+					資料『積層造形をターゲットとした設計～3Dプリントの未来～』
+					企業ランキング一覧
+					第1位
+					株式会社キーエンス
+					株式会社キーエンス
+					第2位
+					株式会社三桂製作所 本社
+					株式会社三桂製作所 本社
+					第3位
+					サンコーテクノ株式会社
+					サンコーテクノ株式会社
+					特集 一覧
+					金属の耐食・耐摩耗特集
+					既存設備の長寿命化特集
+					エレクトロニクス製造・検査特集
+					５G特集
+					コネクタ特集
+					水処理コスト削減特集
+					治具・金型の長寿命化特集
+					スマート工場特集
+					新着ニュース 一覧
+					2021/12/20
+					【期間限定】2D to 3D キャンペーン（3DCAD）
+					アンドール株式会社 プロダクツ営業部
+					2021/12/20
+					【採用事例紹介】「回らないナット」が軽量化・コストダウンに貢献！樹脂締結専用ねじ『高トルク対応圧入式インサートナット』
+					第一工業株式会社 鋲螺事業部(ネジ・ボルト・ナット製造販売,静岡県浜松市)
+					2021/12/20
+					【事例紹介】メッキ槽内のロール支持用軸受
+					株式会社ジェイテクト 大阪本社
+					2021/12/20
+					物流現場のムリ・ムダ・ムラをなくし、気持ちよく働ける環境づくりを
+					太陽工業株式会社　産業資材関連部門グループ　
+
+					閲覧履歴一覧
+					閲覧した製品・カタログ・企業などの情報が自動的にここに表示されて、また見たい時に便利です。
+
+					製品を検索する
+					カタログを検索する
+					企業を検索する
+					PR企画一覧
+					砂型製作の省エネ化に。時短・省スペース化を実現。実機見学受付中
+					少量材料でメルトブローン不織布を試作可能。マスク製造装置も提供
+					ピッキングする部品の場所が光でわかる誘導システム。カタログ進呈
+					最小孔径φ0.02mm。微細孔セラミックスのサンプルセット進呈
+					キーマンインタビュー
+					イプロスものづくり
+					製品
+					分類カテゴリから探す
+					新着製品一覧
+
+					企業
+					製品から探す
+					業種から探す
+					地域から探す
+
+					カタログ
+					おすすめパックから探す
+					新着カタログ一覧
+
+					特集
+					イプロスオリジナル特集
+					展示会連動特集
+					自治体・団体連動特集
+					ランキング
+					企業ランキング
+					製品ランキング
+					カタログランキング
+					キーワードランキング
+
+					ニュース
+					企業ニュース
+					製品ニュース
+					IRニュース
+					カタログニュース
+					その他・お知らせ
+					キャンペーン
+					注目製品
+					セミナー・イベント
+					PR企画
+
+					RSS配信について
+					ヘルプ
+					サイトマップ
+					イプロスとは？
+					イプロスものづくり
+
+					イプロス都市まちづくり
+
+					イプロス医薬食品技術
+
+					TECH DIRECTORY Asia
+
+					エンジニア質問箱
+
+					モノシリ
+					https://point-g.rakuten.co.jp/yamawake/henbai/20211225122524h/
+					Tech Note
+					株式会社イプロス
+					プライバシーポリシー
+
+					利用規約
+
+					会社情報
+
+					採用情報
+
+					広告掲載
+					COPYRIGHT © 2001-2021 IPROS CORPORATION ALL RIGHTS RESERVED.
+					ページの先頭へ
+				</div>
+			</section>
+		</div>
+	</main>
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

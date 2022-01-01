@@ -1,0 +1,194 @@
+html {
+	// この指定で1remが10pxになる
+	font-size: 62.5%;
+}
+body {
+	// width:1200px;
+	margin: 0 auto;
+	max-width: 1260px;
+}
+
+// .test{
+// background-color: #4e9caf;
+// }
+
+$wLogo: 120.5px;
+.header_menu {
+	padding: 0;
+
+	.header_menu1st {
+		height: 65px;
+		display: flex;
+		align-items: center;
+		width: 100%;
+
+		.header_menu_logo {
+			// padding: 10px;
+
+			a {
+				display: block;
+
+				img {
+					// text-align: center;
+					height: 30px;
+					// // line-height: 30px;
+					width: $wLogo;
+
+					// display: inline-block;
+					// vertical-align: middle;
+				}
+			}
+		}
+		.header_menu_search {
+			// width: culc( 100% - #{$wLogo} );
+			// width: calc( ( 100% - #{$wLogo} ) - 50% );
+			padding: 0;
+			height: 40px;
+
+			$btnSearch: 86px;
+			#txtInput {
+				border: none;
+				width: calc(99.35% - #{$btnSearch});
+				height: 99%;
+			}
+
+			.search_btn {
+				// display: inline-block;
+				border: none;
+				height: 100%;
+				width: $btnSearch;
+			}
+		}
+
+		.header_menu2nd {
+			// width: calc( ( 100% - #{$wLogo} ) - 50% );
+			// height: 100%;
+
+			// width: calc(( 100% - #{$wLogo} ) *50% ) ;
+
+			ul {
+				list-style: none;
+				margin-bottom: 0;
+				height: 65px;
+
+				li {
+					width: calc(100% / 6);
+					height: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					border-left: 1px solid #d9d9d9;
+
+					&:first-child a {
+						color: white;
+
+						.header_menu2ndIcon {
+							color: #fff;
+						}
+					}
+					a {
+						text-decoration: none;
+						text-align: center;
+						color: rgba(0, 0, 0, 1);
+
+						// display: block;
+						// height: 100%;
+
+						.header_menu2ndIcon {
+							color: #ccc;
+						}
+					}
+				}
+			}
+		}
+	}
+	.header_nav {
+		background: #a90000;
+		height: 40px;
+		width: 100%;
+
+		ul {
+			list-style: none;
+			height: 100%;
+			display: flex;
+			justify-content: space-around;
+			// 高さを指定しないと効かないよ
+			align-items: center;
+
+			li {
+				display: block;
+
+				a {
+					color: rgb(250, 250, 250);
+					text-decoration: none;
+					font-size: 1.1rem;
+					// 入れ子にする際は、ちゃんと中で＆で書くんやで
+					&:hover {
+						color: rgb(200, 200, 200);
+						transition: 0.2s;
+					}
+				}
+			}
+		}
+	}
+}
+.hero {
+	// position: relative;
+	background: #970000;
+
+	.hero_visual {
+		// position: absolute;
+		display: flex;
+		width: 114.1vw;
+		overflow: hidden;
+		
+		img {
+			margin: 0 0 0 -112px;
+
+			&:nth-child(odd) {
+				animation: fadeinHeroImageFromTop 0.1s ease-in backwards;
+			}
+			&:nth-child(2) {
+				animation-delay: 0.28s;
+			}
+			&:nth-child(3) {
+				animation-delay: 0.56s;
+			}
+			&:nth-child(4) {
+				animation-delay: 0.84s;
+			}
+			&:nth-child(5) {
+				animation-delay: 1.12s;
+			}
+			&:nth-child(6) {
+				animation-delay: 1.4s;
+			}
+			&:nth-child(7) {
+				animation-delay: 1.68s;
+			}
+		}
+	}
+	.hero_copy {
+		z-index: 1;
+		padding-left: 30vw;
+		margin: auto;
+		font-size: 4rem;
+		font-weight: 800;
+		line-height: 1.5;
+		letter-spacing: 0.03em;
+		color: #970000;
+		text-align: left;
+		text-shadow: -2px -2px 5px rgb(255 255 255 / 70%), 2px 2px 5px rgb(255 255 255 / 70%);
+		text-indent: -30vw;
+		align-self: center;
+	}
+}
+.sidebarAdd {
+	display: flex;
+	flex-direction: row-reverse;
+
+	.sidebar {
+		width: 25%;
+		min-width: 380px;
+	}
+}
